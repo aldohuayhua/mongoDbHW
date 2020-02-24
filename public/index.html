@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" style="background-color: lightgrey;">
+    <a class="navbar-brand" href="/">Scraper</a>
+    <div class="container-fluid" style="float: right;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home
+            </a>
+          </li>
+          <li >
+            <a class="show-saved" href="/">Saved Articles</a>
+          </li>
+          <li>
+            <a  class="btn btn-success scrape-new">SCRAPE NEW ARTICLES!</a>
+          </li>
+          <li >
+            <a  class="btn btn-danger clear">CLEAR ARTICLES!</a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+      <div class="jumbotron text-center">
+        <div class="overlay">
+        </div>
+        <div class="background-image">
+        </div>
+        <div class="caption">
+          <h1> New York Times Scraper</h1>
+        </div>
+      </div>
+      
+      <div class="row" id="articles" class="container-fluid article-container">
+          
+      </div>
+
+      <div id="empty" class='alert alert-warning text-center no-show'>
+        <h4>Uh Oh. Looks like we don't have any new articles.</h4>
+      </div>
+      <div class="card">
+        <div class="card-header text-center">
+          <h3>What Would You Like To Do?</h3>
+        </div>
+        <div class="card-body text-center">
+          <h4>
+            <a class="scrape-new">Try Scraping New Articles</a>
+          </h4>
+          <h4>
+            <a href="/" class="show-saved">Go to Saved Articles</a>
+          </h4>
+        </div>
+      </div>
+      
+
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+      <script src="/assets/javascript/index.js"></script>
+      
+</body>
+
+</html>
